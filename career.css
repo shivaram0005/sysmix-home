@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    /* start of navbar */
+.navbar{
+    /* border: 1px solid red; */
+    max-width: 100%;
+    min-height: 50px;
+    margin-top: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+    background-color: #fff;
+    
+}
+.navbar .navbar-content{
+    max-width: 90%;
+    min-height: 50px;
+    /* border: 1px solid green; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .navbar-content .logo a img{
+    width: 150px;
+    height: 47px;
+    
+}
+.navbar .navbar-content .links-content .nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    max-width: 600px;
+    /* gap: 50px; */
+}
+.navbar .navbar-content .links-content .nav-links li{
+    list-style-type: none;
+    font-family: "Outfit",sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight:500;
+    line-height: 20px;
+    /* border: 1px solid green; */
+    margin-right: 40px;
+}
+.navbar .navbar-content .links-content .nav-links li:last-child{
+    margin-right: 0;
+}
+.navbar .navbar-content .links-content .nav-links li:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 5px;
+    text-decoration-color: #5c5c5c;
+}
+.navbar .navbar-content .links-content .nav-links li a{
+    text-decoration: none;
+    color: #5c5c5c;
+}
+
+.navbar .navbar-content .links-content .nav-links .submenu  .submenu-content{
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    min-height: 200px;
+    background-color: #fff;
+    z-index: 99999;
+    top: 45px;
+   
+}
+.navbar .navbar-content .links-content .nav-links .submenu:hover .submenu-content{
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* gap: 20px; */
+    
+}
+.navbar .navbar-content .links-content .nav-links .submenu .submenu-content .submenu-content1{
+   display: flex;
+   flex-direction: column;
+
+}
+.navbar .navbar-content .links-content .nav-links .submenu .submenu-content .submenu-content1 div{
+    margin: 20px 25px;
+    /* border: 1px solid red; */
+    width: 300px;
+    padding: 20px 20px;
+}
+.navbar .navbar-content .links-content .nav-links .submenu .submenu-content .submenu-content1 div:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+}
+.navbar .navbar-content .links-content .nav-links .submenu .submenu-content .submenu-content1 div:hover li{
+    text-decoration: none;
+}
+.navbar .navbar-content .links-content .nav-links .submenu .submenu-content .submenu-content1 div li p{
+    font-family: "Outfit",sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+    color: #5c5c5c;
+    margin: 10px 0px;
+}
+.navbar .navbar-content .links-content .nav-links .submenu .submenu-content .submenu-content2 div li p{
+    font-family: "Outfit",sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+    color: #5c5c5c;
+    margin: 10px 0px;
+}
+.navbar .navbar-content .links-content .nav-links .submenu .submenu-content .submenu-content2 div{
+    position: relative;
+    bottom: 70px;
+}
+.navbar .navbar-content .links-content .nav-links .submenu .submenu-content .submenu-content2 div{
+    margin: 20px 25px;
+    /* border: 1px solid red; */
+    width: 300px;
+    padding: 20px 20px;
+}
+.navbar .navbar-content .links-content .nav-links .submenu .submenu-content .submenu-content2 div:hover {
+    background-color:lightgrey;
+    cursor: pointer;
+}
+.navbar .navbar-content .links-content .nav-links .submenu .submenu-content .submenu-content2 div:hover li{
+    text-decoration: none;
+}
+.navbar .navbar-content .links-content .nav-links .submenu  .submenu-content li{
+    list-style-type: none;
+    font-family: "Outfit",sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight:500;
+    line-height: 20px;
+}
+.navbar .navbar-content .links-content .nav-links .submenu  .submenu li a{
+    text-decoration: none;
+    color: #5c5c5c;
+}
+.navbar .navbar-content .links-content .nav-links li a .icon{
+    margin-left: 3px;
+    transition: transform 0.3s ease;
+}
+.navbar .navbar-content .links-content .nav-links li a:hover .icon{
+    transform: rotate(180deg);
+}
+.navbar .navbar-content .navbar-button button{
+        padding: 10px 20px;
+         border-radius: 50px;
+         color: #fff;
+         background-color: #ff3465;
+         font-family: "Outfit",sans-serif;
+         font-style: normal;
+         font-size: 20px;
+         font-weight: 500;
+         line-height: 20px;
+         color: #fff;
+         margin: 10px 0px ;
+         border-style: none;
+}
+.navbar .navbar-content .navbar-button button:hover{
+    cursor: pointer;
+    outline: 2px solid #ff3465;
+    background-color: #fff;
+    color: #ff3465;
+    box-sizing: border-box;
+}
+@media only screen and (min-width: 980px) {
+ .navbar .navbar-content .links-content{
+  display: block;
+ }
+ .navbar .navbar-content .navbar-button{
+  display:block;
+ }
+ .navbar .navbar-content .nav_toggle{
+  display: none;
+ }
+}
+@media only screen and (max-width:981px) {
+  .navbar .navbar-content .links-content{
+    display:none;
+   }
+   .navbar .navbar-content .navbar-button{
+    display: none;
+   }
+   .navbar .navbar-content .nav_toggle{
+    display: block;
+   }
+  
+  
+}
+/* end of navbar */
+
+ /* start of careers-heading */
+    .careers{
+        max-width: 100%;
+        /* border: 1px solid red; */
+        background-color: #5c84ab;
+        color:#fff;
+        position: relative;
+        top: 80px;
+        min-height:60px;
+        display: flex;
+        align-items: center;
+    }
+    .careers h2{
+        width: 90%;
+        margin: 0 auto;
+        font-family: "Outfit", sans-serif;
+        font-size:22px;
+        font-style: normal;
+        font-weight: 400px;
+        line-height: 38px;
+    }
+ /* end of careers-heading */
+
+ /* start of join-us today section */
+    .joinustoday-section{
+        /* border: 1px solid red; */
+        max-width: 100%;
+        min-height: 400px;
+        position: relative;
+        top: 80px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+    }
+    .joinustoday-section .joinustoday-content{
+        max-width: 90%;
+        margin: 0 auto;
+        /* padding: 10px; */
+        /* border: 1px solid green; */
+    }
+    .joinustoday-section .joinustoday-content h4{
+        font-family: "Outfit", sans-serif;
+        font-style: normal;
+        color: rgb(74, 74, 74);
+        font-family: "Outfit", sans-serif;
+        font-style: normal;
+        font-size: 22px;
+        font-weight: 350;
+        line-height: 38px;
+        margin:20px 0;
+    }
+    .joinustoday-section .joinustoday-content h1{
+        color: #16163f;
+        font-family: "Outfit", sans-serif;
+        font-style: normal;
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 70px;
+        margin: 20px 0;
+    }
+    .joinustoday-section .joinustoday-content p{
+        font-family: "Outfit", sans-serif;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 38px;
+        margin: 20px 0;
+        font-weight: 400;
+        /* border: 1px dashed red; */
+        /* max-width: 80%; */
+    }
+    .joinustoday-section .joinustoday-content .v1{
+        border-left: 6px solid #d3b574;
+        position: relative;
+        right: 10px;
+        display: inline;
+        /* margin: 0 10px; */
+      }
+ /* end of join-us today section */
+
+  /* start of workwithus-section */
+    .workwithus-section{
+        position: relative;
+        max-width: 100%;
+        min-height: 500px;
+        /* border: 3px solid red; */
+        top: 80px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display: flex;
+        align-items: center;
+    }
+    .workwithus-section .workwithus-content{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        min-height: 400px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .workwithus-section .workwithus-content .content{
+        flex: 1;
+        /* border: 5px solid green; */
+        background-color: #34495e;
+        color: #fff;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        
+        /* height: 400px; */
+    }
+    .workwithus-section .workwithus-content .content .content-data{
+        /* border: 5px solid red; */
+        position: relative;
+        right: 0;
+    }
+    .workwithus-section .workwithus-content .content .content-data h2{
+        font-family: "Outfit", sans-serif;
+        font-style: normal;
+        font-size: 30px;
+        /* color: #fff; */
+        margin: 20px 0px;
+        font-weight: 500;
+        line-height: 38px;
+    }
+    .workwithus-section .workwithus-content .content .content-data p{
+        font-family: "Outfit", sans-serif;
+        font-style: normal;
+        font-size: 22px;
+        margin: 20px 0px;
+        font-weight: 350;
+        line-height: 22px;
+    }
+    .workwithus-section .workwithus-content .form{
+        flex: 1;
+        /* border: 2px solid rebeccapurple; */
+    }
+    .workwithus-section .form{
+        flex: 1;
+        /* border: 1px solid green; */
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        /* right: 150px; */
+        /* text-align: left; */
+        box-sizing: border-box;
+      }
+      .workwithus-section .form .content-form label{
+        font-size: 21px;
+        margin: 10px 0px;
+        font-family: "Outfit", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 38px;
+        color: #000;
+    
+      }
+      .workwithus-section .form .content-form input{
+        padding: 10px;
+        width: 350px;
+        border: 1px solid #e7e7e7;
+      }
+      .workwithus-section .form .content-form input:hover{
+        border: 2px solid black;
+      }
+      .workwithus-section .form .content-form button{
+        margin: 25px 0px;
+        padding: 10px ;
+        width: 200px;
+        font-size: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        color: #000;
+        border-style: none;
+        font-family: "Outfit",sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        
+    
+      }
+      .workwithus-section .form .content-form button:hover{
+        cursor: pointer;
+        background-color: #34495e;
+        color: #fff;
+        border-style: none;
+      }
+
+
+  /* end of workwithus-section */
+
+
+  /* start of footer-section */
+ .footer{
+    /* border: 1px solid red; */
+    top: 32px;
+    position: relative;
+    max-width: 100%;
+    min-height: 300px;
+    background-color: #e6e6e6;
+
+ }
+ .footer .footer-content{
+    max-width: 90%;
+    min-height: 300px;
+    /* border: 1px solid green; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+ .footer .footer-content .content-1{
+    /* max-width: 50%; */
+ }
+ .footer .footer-content .content-1 img{
+    width: 150px;
+    height: 60px;
+    margin: 10px 0;
+ }
+ .footer .footer-content .content-1 p{
+    font-family: "Outfit",sans-serif;
+    font-style: normal;
+    font-size: 1.125rem;
+    font-weight: 350;
+    line-height: 22px;
+    color: #000;
+ }
+ .footer .footer-content .content-2 h1{
+    font-family: "Outfit",sans-serif;
+    font-style: normal;
+    font-size: 1.875rem;
+    font-weight: 500;
+    line-height: 39px;
+    color: #000;
+    position: relative;
+   
+ }
+ .footer .footer-content .content-2 ul li {
+    font-family: "Outfit", sans-serif;
+    font-style: normal;
+    size: 18px;
+    font-weight: 400;
+    line-height: 38px;
+    list-style-type: none;
+   
+  }
+  .footer .footer-content .content-2 ul li a:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+  }
+  .footer .footer-content .content-2 ul li a{
+    text-decoration: none;
+    color: #137547;
+    
+    
+  }
+  .footer .footer-content .content-3 h1{
+    font-family: "Outfit",sans-serif;
+    font-style: normal;
+    font-size: 1.875rem;
+    font-weight: 500;
+    line-height: 39px;
+    color: #000;
+    position: relative;
+   
+  }
+  .footer .footer-content .content-3 ul li {
+    font-family: "Outfit", sans-serif;
+    font-style: normal;
+    size: 18px;
+    font-weight: 400;
+    line-height: 38px;
+    list-style-type: none;
+  }
+  .footer .footer-content .content-3 ul li a{
+    color: #137547;
+    text-decoration: none;
+    
+  }
+  .footer .footer-content .content-3 ul li a:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+  }
+
+  .footer .footer-content .content-4 h1{
+    font-family: "Outfit",sans-serif;
+    font-style: normal;
+    font-size: 1.875rem;
+    font-weight: 500;
+    line-height: 39px;
+    color: #000;
+    position: relative;
+  }
+  .footer .footer-content .content-4 ul li{
+    font-family: "Outfit", sans-serif;
+    font-style: normal;
+    size: 18px;
+    font-weight: 400;
+    line-height: 38px;
+    list-style-type: none;
+  }
+  .footer .footer-content .content-4 ul li a{
+    color: #137547;
+    text-decoration: none;
+    
+  }
+  .footer .footer-content .content-4 ul li a:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+  }
+
+  /* end of footer section */
