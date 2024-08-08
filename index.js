@@ -13,25 +13,75 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // start of carousel-section
-let slideIndex = 0;
-showSlides();
+document.addEventListener('DOMContentLoaded', () => {
+  let currentIndex = 0;
+  const items = document.querySelectorAll('.carousel-item');
+  const dots = document.querySelectorAll('.dot');
+  let isDragging = false;
+  let startX = 0;
+  let offsetX = 0;
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+  function showItem(index) {
+    items.forEach((item, i) => {
+      item.classList.toggle('active', i === index);
+    });
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === index);
+    });
+    document.querySelector('.carousel-inner').style.transform = `translateX(-${index * 100}%)`;
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+
+  function nextItem() {
+    currentIndex = (currentIndex + 1) % items.length;
+    showItem(currentIndex);
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides,3000); // Change image every 2 seconds
-}
+
+  function prevItem() {
+    currentIndex = (currentIndex - 1 + items.length) % items.length;
+    showItem(currentIndex);
+  }
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      currentIndex = index;
+      showItem(currentIndex);
+    });
+  });
+
+  let autoSlide = setInterval(nextItem, 5000);
+
+  const carouselInner = document.querySelector('.carousel-inner');
+
+  carouselInner.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startX = e.clientX;
+    offsetX = 0;
+    clearInterval(autoSlide);
+  });
+
+  carouselInner.addEventListener('mouseup', (e) => {
+    if (!isDragging) return;
+    isDragging = false;
+    if (offsetX > 100) {
+      prevItem();
+    } else if (offsetX < -100) {
+      nextItem();
+    }
+    autoSlide = setInterval(nextItem, 5000);
+  });
+
+  carouselInner.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    offsetX = e.clientX - startX;
+  });
+
+  carouselInner.addEventListener('mouseleave', () => {
+    isDragging = false;
+  });
+
+  // Initialize first slide display
+  showItem(currentIndex);
+});
 
 //  end of carousel-section
 

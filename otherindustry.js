@@ -55,6 +55,7 @@ function updateSlider() {
 
         const background = currentSlide.getAttribute('data-background');
         document.body.style.backgroundImage = `url(${background})`;
+        // background.style.position = "relative"
 
         const dots = document.querySelectorAll('.vertical-dots .dot');
         dots.forEach((dot, index) => {

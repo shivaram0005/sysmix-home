@@ -10,7 +10,7 @@
     /* border: 1px solid red; */
     max-width: 100%;
     min-height: 50px;
-    margin-top: 15px;
+    /* margin-top: 15px; */
     position: fixed;
     top: 0;
     left: 0;
@@ -97,6 +97,8 @@
     /* border: 1px solid red; */
     width: 300px;
     padding: 20px 20px;
+    position: relative;
+    left: 30px;
 }
 .navbar .navbar-content .links-content .nav-links .submenu .submenu-content .submenu-content1 div:hover {
     background-color: lightgrey;
@@ -211,7 +213,7 @@
         background-color: #5c84ab;
         color:#fff;
         position: relative;
-        top: 80px;
+        top: 60px;
         min-height:60px;
         display: flex;
         align-items: center;
@@ -233,7 +235,7 @@
         max-width: 100%;
         min-height: 400px;
         position: relative;
-        top: 80px;
+        top: 60px;
         background-color: #fff;
         display: flex;
         align-items: center;
@@ -289,7 +291,7 @@
         max-width: 100%;
         min-height: 500px;
         /* border: 3px solid red; */
-        top: 80px;
+        top: 60px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         display: flex;
         align-items: center;
@@ -403,7 +405,7 @@
   /* start of footer-section */
  .footer{
     /* border: 1px solid red; */
-    top: 32px;
+    top: 12px;
     position: relative;
     max-width: 100%;
     min-height: 300px;
@@ -523,5 +525,50 @@
     text-underline-offset: 5px;
     text-decoration-thickness: 2px;
   }
+  @media only screen and (max-width: 768px) {
+    .footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .footer-content .content-1 img {
+        width: 120px;
+        height: 50px;
+    }
+
+    .footer .footer-content .content-2 h1,
+    .footer .footer-content .content-3 h1,
+    .footer .footer-content .content-4 h1 {
+        font-size: 1.5rem;
+    }
+
+    .footer .footer-content .content-2 ul li,
+    .footer .footer-content .content-3 ul li,
+    .footer .footer-content .content-4 ul li {
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .footer .footer-content .content-1 img {
+        width: 100px;
+        height: 40px;
+    }
+
+    .footer .footer-content .content-2 h1,
+    .footer .footer-content .content-3 h1,
+    .footer .footer-content .content-4 h1 {
+        font-size: 1.25rem;
+    }
+
+    .footer .footer-content .content-2 ul li,
+    .footer .footer-content .content-3 ul li,
+    .footer .footer-content .content-4 ul li {
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
 
   /* end of footer section */
