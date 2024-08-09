@@ -13,7 +13,7 @@ body{
 .navbar{
     /* border: 1px solid red; */
     max-width: 100%;
-    min-height: 50px;
+    min-height: 70px;
     /* margin-top: 15px; */
     position: fixed;
     top: 0;
@@ -50,9 +50,9 @@ body{
 .navbar .navbar-content .links-content .nav-links li{
     list-style-type: none;
     font-family: "Outfit",sans-serif;
-    font-size: 20px;
+    font-size: 19px;
     font-style: normal;
-    font-weight:500;
+    font-weight:300;
     line-height: 20px;
     /* border: 1px solid green; */
     margin-right: 40px;
@@ -79,7 +79,7 @@ body{
     min-height: 200px;
     background-color: #fff;
     z-index: 99999;
-    top: 45px;
+    top: 55px;
    
 }
 .navbar .navbar-content .links-content .nav-links .submenu:hover .submenu-content{
@@ -105,7 +105,7 @@ body{
     left: 30px;
 }
 .navbar .navbar-content .links-content .nav-links .submenu .submenu-content .submenu-content1 div:hover {
-    background-color: lightgrey;
+  background-color:#e6eaff;
     cursor: pointer;
 }
 .navbar .navbar-content .links-content .nav-links .submenu .submenu-content .submenu-content1 div:hover li{
@@ -129,7 +129,7 @@ body{
 }
 .navbar .navbar-content .links-content .nav-links .submenu .submenu-content .submenu-content2 div{
     position: relative;
-    bottom: 70px;
+    bottom: 78px;
 }
 .navbar .navbar-content .links-content .nav-links .submenu .submenu-content .submenu-content2 div{
     margin: 20px 25px;
@@ -138,7 +138,7 @@ body{
     padding: 20px 20px;
 }
 .navbar .navbar-content .links-content .nav-links .submenu .submenu-content .submenu-content2 div:hover {
-    background-color:lightgrey;
+  background-color:#e6eaff;
     cursor: pointer;
 }
 .navbar .navbar-content .links-content .nav-links .submenu .submenu-content .submenu-content2 div:hover li{
@@ -151,6 +151,12 @@ body{
     font-style: normal;
     font-weight:500;
     line-height: 20px;
+}
+.navbar .navbar-content .links-content .nav-links .submenu .submenu-content .submenu-content1 div li a{
+  color: #5287ac;
+}
+.navbar .navbar-content .links-content .nav-links .submenu .submenu-content .submenu-content2 div li a{
+  color: #5287ac;
 }
 .navbar .navbar-content .links-content .nav-links .submenu  .submenu li a{
     text-decoration: none;
@@ -165,23 +171,25 @@ body{
 }
 .navbar .navbar-content .navbar-button button{
         padding: 10px 20px;
-         border-radius: 50px;
-         color: #fff;
-         background-color: #ff3465;
+         /* border-radius: 50px; */
+         /* color: #fff;
+         background-color: #ff3465; */
          font-family: "Outfit",sans-serif;
          font-style: normal;
          font-size: 20px;
          font-weight: 500;
          line-height: 20px;
-         color: #fff;
+         /* color: #fff; */
          margin: 10px 0px ;
          border-style: none;
+         color: #5287ac;
+         background-color: #dce7ee;
 }
 .navbar .navbar-content .navbar-button button:hover{
     cursor: pointer;
-    outline: 2px solid #ff3465;
+    /* outline: 2px solid #ff3465;
     background-color: #fff;
-    color: #ff3465;
+    color: #ff3465; */
     box-sizing: border-box;
 }
 @media only screen and (min-width: 980px) {
@@ -665,7 +673,7 @@ font-style: normal;
 font-size: 1.875rem;
 font-weight: 500;
 line-height: 39px;
-color: #000;
+color: #5287ac;
 position: relative;
 
 }
@@ -685,7 +693,7 @@ text-decoration-thickness: 2px;
 }
 .footer .footer-content .content-2 ul li a{
 text-decoration: none;
-color: #137547;
+color: #000;
 
 
 }
@@ -695,7 +703,7 @@ font-style: normal;
 font-size: 1.875rem;
 font-weight: 500;
 line-height: 39px;
-color: #000;
+color: 5287ac;
 position: relative;
 
 }
@@ -708,7 +716,7 @@ line-height: 38px;
 list-style-type: none;
 }
 .footer .footer-content .content-3 ul li a{
-color: #137547;
+color: #000;
 text-decoration: none;
 
 }
@@ -724,7 +732,7 @@ font-style: normal;
 font-size: 1.875rem;
 font-weight: 500;
 line-height: 39px;
-color: #000;
+color: #5287ac;
 position: relative;
 }
 .footer .footer-content .content-4 ul li{
@@ -736,7 +744,7 @@ line-height: 38px;
 list-style-type: none;
 }
 .footer .footer-content .content-4 ul li a{
-color: #137547;
+color: #000;
 text-decoration: none;
 
 }

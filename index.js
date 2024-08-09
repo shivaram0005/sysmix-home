@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  let autoSlide = setInterval(nextItem, 5000);
+  let autoSlide = setInterval(nextItem,5000);
 
   const carouselInner = document.querySelector('.carousel-inner');
 

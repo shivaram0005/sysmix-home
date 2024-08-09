@@ -9,7 +9,7 @@
 .navbar{
     /* border: 1px solid red; */
     max-width: 100%;
-    min-height: 50px;
+    min-height: 70px;
     /* margin-top: 15px; */
     position: fixed;
     top: 0;
@@ -33,6 +33,7 @@
 .navbar .navbar-content .logo a img{
     width: 150px;
     height: 47px;
+    display: block;
     
 }
 .navbar .navbar-content .links-content .nav-links{
@@ -47,9 +48,9 @@
 .navbar .navbar-content .links-content .nav-links li{
     list-style-type: none;
     font-family: "Outfit",sans-serif;
-    font-size: 20px;
+    font-size: 19px;
     font-style: normal;
-    font-weight:500;
+    font-weight:300;
     line-height: 20px;
     /* border: 1px solid green; */
     margin-right: 40px;
@@ -76,8 +77,8 @@
     min-height: 200px;
     background-color: #fff;
     z-index: 99999;
-    top: 45px;
-    /* border: 5px solid green; */
+    top: 55px;
+    /* border: 2px solid green; */
    
 }
 .navbar .navbar-content .links-content .nav-links .submenu:hover .submenu-content{
@@ -103,8 +104,14 @@
     position: relative;
     left: 30px;
 }
+.navbar .navbar-content .links-content .nav-links .submenu .submenu-content .submenu-content1 div li a{
+  color: #5287ac;
+}
+.navbar .navbar-content .links-content .nav-links .submenu .submenu-content .submenu-content2 div li a{
+  color: #5287ac;
+}
 .navbar .navbar-content .links-content .nav-links .submenu .submenu-content .submenu-content1 div:hover {
-    background-color: lightgrey;
+    background-color: #e6eaff;
     cursor: pointer;
 }
 .navbar .navbar-content .links-content .nav-links .submenu .submenu-content .submenu-content1 div:hover li{
@@ -128,7 +135,8 @@
 }
 .navbar .navbar-content .links-content .nav-links .submenu .submenu-content .submenu-content2 div{
     position: relative;
-    bottom: 70px;
+    bottom: 78px;
+    /* border: 1px solid green; */
 }
 .navbar .navbar-content .links-content .nav-links .submenu .submenu-content .submenu-content2 div{
     margin: 20px 25px;
@@ -137,7 +145,7 @@
     padding: 20px 20px;
 }
 .navbar .navbar-content .links-content .nav-links .submenu .submenu-content .submenu-content2 div:hover {
-    background-color:lightgrey;
+    background-color:#e6eaff;
     cursor: pointer;
 }
 .navbar .navbar-content .links-content .nav-links .submenu .submenu-content .submenu-content2 div:hover li{
@@ -150,6 +158,8 @@
     font-style: normal;
     font-weight:500;
     line-height: 20px;
+    /* border: 1px solid rebeccapurple; */
+    /* color: #5287ac; */
 }
 .navbar .navbar-content .links-content .nav-links .submenu  .submenu li a{
     text-decoration: none;
@@ -162,26 +172,27 @@
 .navbar .navbar-content .links-content .nav-links li a:hover .icon{
     transform: rotate(180deg);
 }
+
 .navbar .navbar-content .navbar-button button{
         padding: 10px 20px;
-         border-radius: 50px;
-         color: #fff;
-         background-color: #ff3465;
+         /* border-radius: 50px; */
+         /* background-color: #ff3465; */
          font-family: "Outfit",sans-serif;
          font-style: normal;
          font-size: 20px;
          font-weight: 500;
          line-height: 20px;
-         color: #fff;
+         color: #5287ac;
          margin: 10px 0px ;
          border-style: none;
+         background-color: #dce7ee;
 }
 .navbar .navbar-content .navbar-button button:hover{
     cursor: pointer;
-    outline: 2px solid #ff3465;
-    background-color: #fff;
+    /* outline: 2px solid #ff3465; */
+    /* background-color: #fff;
     color: #ff3465;
-    box-sizing: border-box;
+    box-sizing: border-box; */
 }
 @media only screen and (min-width: 980px) {
  .navbar .navbar-content .links-content{
@@ -268,8 +279,8 @@
 
 .carousel-content button {
  margin: 15px 0px;
- padding: 10px 20px;
- border-radius: 50px;
+ padding: 10px 20px 12px 20px;
+ /* border-radius: 50px; */
  color: #fff;
  font-family: "Outfit", sans-serif;
  font-weight: 500;
@@ -280,7 +291,7 @@
 
 .carousel-content button:hover {
   cursor: pointer;
-  border-radius: 50px;
+  /* border-radius: 50px; */
   outline: 2px solid #ff3465;
 }
 
@@ -314,7 +325,7 @@
     text-align: center;
     position: relative;
     top: 80px;
-    color: #1BA48B;
+    color: #5987a8;
     font-family: "Outfit", sans-serif;
     font-style: normal;
     font-weight: 600px;
@@ -370,14 +381,14 @@
   font-size: 25px;
   line-height: 30px;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .flex-item-60 p{
   font-family: "Outfit", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 22px;
-  font-weight: 400;
+  font-weight: 300;
   text-align: left;
   
 }
@@ -435,7 +446,7 @@
   font-style: normal;
   font-size: 18px;
   line-height: 22px;
-  font-weight: 400;
+  font-weight: 300;
   text-align: left;
   
 }
@@ -471,7 +482,7 @@
     text-align: center;
     position: relative;
     top: 120px;
-    color: #1ba48b;
+    color: #5987a8;
     font-family: "Outfit",sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -529,7 +540,7 @@
     font-family: "Outfit",sans-serif;
     font-weight: 500;
     line-height: 39px;
-    color: #009134;
+    color: #5c5c5c;
 }
 
 
@@ -641,7 +652,7 @@
     font-size: 1.875rem;
     font-weight: 500;
     line-height: 39px;
-    color: #000;
+    color: #5287ac;
     position: relative;
    
  }
@@ -661,7 +672,7 @@
   }
   .footer .footer-content .content-2 ul li a{
     text-decoration: none;
-    color: #137547;
+    color: #000;
     
     
   }
@@ -671,7 +682,7 @@
     font-size: 1.875rem;
     font-weight: 500;
     line-height: 39px;
-    color: #000;
+    color: #5287ac;
     position: relative;
    
   }
@@ -684,7 +695,7 @@
     list-style-type: none;
   }
   .footer .footer-content .content-3 ul li a{
-    color: #137547;
+    color: #000;
     text-decoration: none;
     
   }
@@ -700,7 +711,7 @@
     font-size: 1.875rem;
     font-weight: 500;
     line-height: 39px;
-    color: #000;
+    color: #5287ac;
     position: relative;
   }
   .footer .footer-content .content-4 ul li{
@@ -712,7 +723,7 @@
     list-style-type: none;
   }
   .footer .footer-content .content-4 ul li a{
-    color: #137547;
+    color: #000;
     text-decoration: none;
     
   }
