@@ -18,10 +18,12 @@
     z-index: 999999;
     background-color: #fff;
     /* border: 1px solid red; */
+    display: flex;
+    align-items:center;
     
 }
 .navbar .navbar-content{
-    max-width: 90%;
+    width: 90%;
     min-height: 50px;
     /* border: 1px solid green; */
     margin: 0 auto;
@@ -873,14 +875,14 @@ border-bottom-right-radius: 10px;
 
  }
  .footer .footer-content{
-    max-width: 90%;
+    width: 90%;
     min-height: 300px;
     /* border: 1px solid green; */
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
  }
  .footer .footer-content .content-1{
