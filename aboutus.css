@@ -30,6 +30,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    max-width: 1200px;
 }
 .navbar .navbar-content .logo a img{
     width: 150px;
@@ -68,6 +69,10 @@
     text-decoration: none;
     color: #5c5c5c;
 }
+.navbar .navbar-content .links-content .nav-links .submenu{
+    padding: 15px;
+    
+  }
 
 .navbar .navbar-content .links-content .nav-links .submenu  .submenu-content{
     display: none;
@@ -77,7 +82,8 @@
     min-height: 200px;
     background-color: #fff;
     z-index: 99999;
-    top: 55px;
+    top: 60px;
+    
    
 }
 .navbar .navbar-content .links-content .nav-links .submenu:hover .submenu-content{
@@ -189,6 +195,8 @@
     background-color: #fff;
     color: #ff3465; */
     box-sizing: border-box;
+    background-color: #5287ac;
+    color: #fff;
 }
 @media only screen and (min-width: 980px) {
  .navbar .navbar-content .links-content{
@@ -236,6 +244,7 @@
     font-style: normal;
     font-weight: 400px;
     line-height: 38px;
+    max-width: 1200px;
 }
 /* end of aboutus-heading */
 
@@ -258,19 +267,37 @@
         justify-content: space-between;
         gap: 10px;
         flex-wrap: wrap;
+        max-width: 1200px;
     }
     .aboutus-section .aboutus-content .left-content{
         /* border: 3px solid rebeccapurple; */
         flex: 1;
     }
-    .aboutus-section .aboutus-content .left-content h2{
-    font-family: "Outfit", sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      color: #000;
-      line-height: 55px;
-      font-size: 42px;
-      margin: 20px 0px;
+    .aboutus-section .aboutus-content .left-content h4{
+        font-family: "Outfit", sans-serif;
+        font-style: normal;
+        color: rgb(74, 74, 74);
+        font-family: "Outfit", sans-serif;
+        font-style: normal;
+        font-size: 22px;
+        font-weight: 350;
+        line-height: 38px;
+        margin:20px 0;
+    }
+    .aboutus-section .aboutus-content .left-content h1{
+        color: #16163f;
+        font-family: "Outfit", sans-serif;
+        font-style: normal;
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 70px;
+        margin: 20px 0;
+    }
+    .aboutus-section .aboutus-content .left-content h1 .v1{
+        border-left: 6px solid #d3b574;
+        position: relative;
+        right: 10px;
+        display: inline;
     }
     .aboutus-section .aboutus-content .left-content p{
       font-family: "Outfit",sans-serif;
@@ -377,6 +404,7 @@
     width: 90%;
     margin: 0 auto;
     /* border: 2px solid purple; */
+    max-width: 1200px;
 }
 
 .mission-driven .mission-driven-content button{
@@ -444,14 +472,14 @@
     justify-content: center; */
 }
 .values .values-content{
-    max-width: 90%;
+    width: 90%;
     /* border: 3px solid blue; */
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-
+    max-width: 1200px;
 }
 
 .values .values-content .content-1{
@@ -606,6 +634,7 @@
         min-height: 400px;
         justify-content: space-around;
         flex-wrap: wrap;
+        max-width: 1200px;
     }
     .workwithus-section .workwithus-content .content{
         flex: 1;
@@ -715,7 +744,7 @@
 
  }
  .footer .footer-content{
-    max-width: 90%;
+    width: 90%;
     min-height: 300px;
     /* border: 1px solid green; */
     margin: 0 auto;
@@ -724,6 +753,7 @@
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    max-width: 1200px;
  }
  .footer .footer-content .content-1{
     /* max-width: 50%; */

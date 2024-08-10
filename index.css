@@ -32,6 +32,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    max-width: 1200px;
 }
 .navbar .navbar-content .logo a img{
     width: 150px;
@@ -72,6 +73,10 @@
     color: #5c5c5c;
 }
 
+.navbar .navbar-content .links-content .nav-links .submenu{
+  padding: 15px;
+  
+}
 .navbar .navbar-content .links-content .nav-links .submenu  .submenu-content{
     display: none;
     position: absolute;
@@ -80,8 +85,12 @@
     min-height: 200px;
     background-color: #fff;
     z-index: 99999;
-    top: 55px;
+    top: 60px;
     /* border: 2px solid green; */
+    /* top: 100%; */
+    /* left: 0; */
+    /* width: 100vw; */
+   
    
 }
 .navbar .navbar-content .links-content .nav-links .submenu:hover .submenu-content{
@@ -91,8 +100,16 @@
     justify-content: center;
     align-items: center;
     /* gap: 20px; */
+    /* border: 1px solid green; */
+    /* transition: opacity 0.3s ease, visibility 0.3s ease; */
+    
     
 }
+.navbar .navbar-content .links-content .nav-links .submenu:hover .submenu-content:hover{
+  
+}
+
+
 .navbar .navbar-content .links-content .nav-links .submenu .submenu-content .submenu-content1{
    display: flex;
    flex-direction: column;
@@ -196,6 +213,8 @@
     /* background-color: #fff;
     color: #ff3465;
     box-sizing: border-box; */
+    background-color: #5287ac;
+    color: #fff;
 }
 @media only screen and (min-width: 980px) {
  .navbar .navbar-content .links-content{
@@ -295,7 +314,7 @@
 .carousel-content button:hover {
   cursor: pointer;
   /* border-radius: 50px; */
-  outline: 2px solid #ff3465;
+  /* outline: 2px solid #ff3465; */
 }
 
 .carousel-indicators {
@@ -356,12 +375,13 @@
   width: 80%;
   margin: 0 auto;
   /* border: 1px solid green; */
-  min-height: 350px;
+  /* min-height: 350px; */
   display: flex;
   max-width: 1200px;
   gap: 25px;
   margin-bottom: 30px;
   /* background-color: #e6f3ff; */
+  min-height: 240px;
 }
 .flex-item-60, .flex-item-40 {
   padding: 20px;

@@ -34,6 +34,7 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    max-width: 1200px;
 }
 .navbar .navbar-content .logo a img{
     width: 150px;
@@ -72,7 +73,10 @@ body{
     text-decoration: none;
     color: #5c5c5c;
 }
-
+.navbar .navbar-content .links-content .nav-links .submenu{
+  padding: 15px;
+  
+}
 .navbar .navbar-content .links-content .nav-links .submenu  .submenu-content{
     display: none;
     position: absolute;
@@ -81,7 +85,7 @@ body{
     min-height: 200px;
     background-color: #fff;
     z-index: 99999;
-    top: 55px;
+    top: 60px;
    
 }
 .navbar .navbar-content .links-content .nav-links .submenu:hover .submenu-content{
@@ -193,6 +197,8 @@ body{
     background-color: #fff;
     color: #ff3465; */
     box-sizing: border-box;
+    background-color: #5287ac;
+    color: #fff;
 }
 @media only screen and (min-width: 980px) {
  .navbar .navbar-content .links-content{
@@ -240,6 +246,7 @@ body{
   flex-direction: row;
   align-items: center;
   gap: 40px;
+  max-width: 1200px;
 }
 .sub-heading .sub-heading-content h2{
   font-family: "Outfit", sans-serif;
@@ -535,6 +542,7 @@ body{
     min-height: 400px;
     justify-content: space-around;
     flex-wrap: wrap;
+    max-width: 1200px;
 }
 .workwithus-section .workwithus-content .content{
     flex: 1;
@@ -652,6 +660,7 @@ flex-direction: row;
 align-items: center;
 justify-content: space-evenly;
 flex-wrap: wrap;
+max-width: 1200px;
 }
 .footer .footer-content .content-1{
 /* max-width: 50%; */

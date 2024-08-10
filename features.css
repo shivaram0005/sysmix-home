@@ -35,6 +35,7 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    max-width: 1200px;
 }
 .navbar .navbar-content .logo a img{
     width: 150px;
@@ -73,6 +74,10 @@ body{
     text-decoration: none;
     color: #5c5c5c;
 }
+.navbar .navbar-content .links-content .nav-links .submenu{
+    padding: 15px;
+    
+  }
 
 .navbar .navbar-content .links-content .nav-links .submenu  .submenu-content{
     display: none;
@@ -82,7 +87,7 @@ body{
     min-height: 200px;
     background-color: #fff;
     z-index: 99999;
-    top: 55px;
+    top: 60px;
    
 }
 .navbar .navbar-content .links-content .nav-links .submenu:hover .submenu-content{
@@ -193,6 +198,8 @@ body{
     background-color: #fff;
     color: #ff3465; */
     box-sizing: border-box;
+    background-color: #5287ac;
+    color: #fff;
 }
 @media only screen and (min-width: 980px) {
  .navbar .navbar-content .links-content{
@@ -274,11 +281,13 @@ body{
     gap: 25px;
     margin-bottom: 30px;
     background-color: #e6f3ff;
+    /* min-height: 250px; */
 }
 .flex-item-60, .flex-item-40 {
     padding: 20px;
     box-sizing: border-box;
-   
+    /* border: 2px solid red; */
+    
 }
 
 .flex-item-60 {
@@ -290,6 +299,7 @@ body{
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     /* border: 4px solid rebeccapurple; */
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.2);
+    /* border: 1px solid rebeccapurple; */
 }
 .flex-item-60 h2{
     font-family: "Outfit", sans-serif;
@@ -298,6 +308,11 @@ body{
     line-height: 30px;
     font-weight: 500;
     margin-bottom: 5px;
+    /* position: relative;
+    top: 40px;
+    left: 20px;
+    margin-right: 50px; */
+    
 }
 .flex-item-60 p{
     font-family: "Outfit", sans-serif;
@@ -306,6 +321,10 @@ body{
     line-height: 22px;
     font-weight: 300;
     text-align: left;
+    /* position: relative;
+    top: 40px;
+    left: 20px;
+   margin-right: 50px; */
     
 }
 .flex-item-60 img{
@@ -333,6 +352,11 @@ body{
     line-height: 30px;
     font-weight: 500;
     margin-bottom: 5px;
+    /* position: relative;
+    top: 40px;
+    left: 20px;
+    margin-right: 50px; */
+    
 }
 .flex-item-40 p{
     font-family: "Outfit", sans-serif;
@@ -341,6 +365,11 @@ body{
     line-height: 22px;
     font-weight: 300;
     text-align: left;
+    /* position: relative;
+    top: 40px;
+    left: 20px;
+    margin-right: 50px; */
+    
     
 }
 .flex-item-40 img{
