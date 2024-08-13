@@ -375,17 +375,18 @@
   width: 80%;
   margin: 0 auto;
   /* border: 1px solid green; */
-  /* min-height: 350px; */
+  min-height: 350px;
   display: flex;
   max-width: 1200px;
   gap: 25px;
   margin-bottom: 30px;
   /* background-color: #e6f3ff; */
-  min-height: 240px;
+  /* min-height: 240px; */
 }
 .flex-item-60, .flex-item-40 {
   padding: 20px;
   box-sizing: border-box;
+  /* min-height: 511px; */
  
 }
 
@@ -405,6 +406,9 @@
   line-height: 30px;
   font-weight: 500;
   margin-bottom: 5px;
+  /* position: relative;
+  top: 71.55px;
+  left: 42.91px; */
 }
 .flex-item-60 p{
   font-family: "Outfit", sans-serif;
@@ -413,6 +417,9 @@
   line-height: 22px;
   font-weight: 300;
   text-align: left;
+  /* position: relative;
+  top: 101.55px;
+  left: 42.91px; */
   
 }
 .flex-item-60 button{
@@ -452,6 +459,7 @@
   flex: 0 0 40%;
   background-color: #a459d1;
   border-radius: 15px;
+  /* min-height: 511px; */
   color: #fff;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
